@@ -24,7 +24,7 @@ const drawFn = async () => {
     method: 'GET',
     credentials: 'include'
   }).then((res) => res.json());
-
+console.log('err_no '+today.err_no+' ,'+today.data.free_count);
   if (today.err_no !== 0) return Promise.reject('已经签到！免费抽奖失败！');
   if (today.data.free_count === 0) return Promise.resolve('签到成功！今日已经免费抽奖！');
 
@@ -84,5 +84,5 @@ const drawFn = async () => {
     console.log('邮件发送成功！');
   })
   .catch((err) => {
-    console.log('异常');
+    console.log('异常'+err);
   });
