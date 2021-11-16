@@ -49,7 +49,7 @@ console.log('err_no '+today.err_no+' ,'+today.data.free_count);
     method: 'GET',
     credentials: 'include'
   }).then((res) => res.json());
-
+console.log('是否签到：'+today_status.err_no);
   if (today_status.err_no !== 0) return Promise.reject('签到失败！');
   if (today_status.data) return Promise.resolve('今日已经签到！');
 
@@ -81,8 +81,8 @@ console.log('err_no '+today.err_no+' ,'+today.data.free_count);
     return '';
   })
   .then(() => {
-    console.log('邮件发送成功！');
+    console.log('邮件功能去掉了，忽略！');
   })
   .catch((err) => {
-    console.log('异常'+err);
+    console.log('catch结果:'+err);
   });
