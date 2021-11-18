@@ -1,6 +1,6 @@
 const fetch = require('node-fetch');
 
-const [cookie, user, pass, to] = process.argv.slice(2);
+const [cookie] = process.argv.slice(2);
 
 let score = 0;
 
