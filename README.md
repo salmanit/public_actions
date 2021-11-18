@@ -5,7 +5,7 @@
 
 使用方法：fork 本仓库
 
-打开浏览器，登陆掘金，F12 查看 Network 面板，复制 cookie
+打开浏览器，登陆掘金，F12 查看 Network 面板，复制 cookies[就是一堆key value值], 在doc目录下，F5刷新一下，然后查看那个requestHeader就能找到，不清楚的可以百度
 
 打开 github 仓库的 Setting，选择 Secrets，新建下列 4 个仓库 Secret
 | key | value |
@@ -16,3 +16,7 @@
 | TO | 接收邮件的邮箱 |
 
 `注意：掘金的cookie大概有一个月的有效期，所以需要定期更新Secret`
+
+备注：PASS不是邮箱密码，而是你开启SMTP功能时候给的一个类似授权码的东西。
+
+如果不需要邮件提醒。可以运行actions下边那个 notemail_juejin.yml 文件，这个执行的是index2.js 脚本，此脚本里把发送邮件功能删了。
