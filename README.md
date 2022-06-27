@@ -21,3 +21,4 @@
 
 如果不需要邮件提醒。可以运行actions下边那个 notemail_juejin.yml 文件，这个执行的是index2.js 脚本，此脚本里把发送邮件功能删了。
 workflow 语法查看这里 https://docs.github.com/cn/actions/using-workflows/workflow-syntax-for-github-actions#onschedule
+注意：workflow 60天没有操作就自动disable了，需要手动enable。我开始还以为secret过期了。
