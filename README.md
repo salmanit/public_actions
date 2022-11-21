@@ -15,10 +15,11 @@
 | PASS | 该邮箱的 SMTP 密码 |
 | TO | 接收邮件的邮箱 |
 
-`注意：掘金的cookie大概有一个月的有效期，所以需要定期更新Secret`
+`注意：掘金的cookie的有效期，具体多久我也不清楚，所以需要定期更新Secret`
 
 备注：PASS不是邮箱密码，而是你开启SMTP功能时候给的一个类似授权码的东西。
 
 如果不需要邮件提醒。可以运行actions下边那个 notemail_juejin.yml 文件，这个执行的是index2.js 脚本，此脚本里把发送邮件功能删了。
 workflow 语法查看这里 https://docs.github.com/cn/actions/using-workflows/workflow-syntax-for-github-actions#onschedule
-注意：workflow 60天没有操作就自动disable了，需要手动enable。我开始还以为secret过期了。
+
+`注意：workflow 60天没有操作就自动disable了，需要手动enable。我开始还以为secret过期了。`
