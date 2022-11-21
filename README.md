@@ -7,7 +7,7 @@
 
 打开浏览器，登陆掘金，F12 查看 Network 面板，复制 cookies[就是一堆key value值], 在doc目录下，F5刷新一下，然后查看那个requestHeader就能找到，不清楚的可以百度
 
-打开 github 仓库的 Setting，选择 Secrets，新建下列 4 个仓库 Secret
+打开 github 仓库的 Setting，选择 Secrets，新建下列 4 个仓库 Secret(不需要给邮箱发送邮件的，只添加cookie就行了)
 | key | value |
 | --- | ---|
 | COOKIE | 值为上面复制掘金的 cookie |
