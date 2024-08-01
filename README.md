@@ -23,4 +23,5 @@
 workflow 语法查看这里 https://docs.github.com/cn/actions/using-workflows/workflow-syntax-for-github-actions#onschedule
 
 `注意：workflow 60天没有操作就自动disable了，需要手动enable。我开始还以为secret过期了。`
---------------20240607修改，防止过期-----------------
+--------------20240801修改，防止过期-----------------
+-------这个自动签到咋无效了，我收到签到邮件了，结果网站显示没签到-----------------
